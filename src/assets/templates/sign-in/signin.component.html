@@ -1,0 +1,5 @@
+<md-card-content>
+  <h3>{{ (user | async)?.uid }}</h3>
+  <button md-raised-button (click)="login()">Login</button>
+  <button md-raised-button (click)="logout()">Logout</button>
+</md-card-content>

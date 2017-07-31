@@ -1,0 +1,41 @@
+<div>
+  <form (ngSubmit)="save(productsForm)" #productsForm="ngForm">
+    <md-input-container>
+      <span md-placeholder>Company</span>
+      <input type="text" [(ngModel)]="products.company" name="company" mdInput>
+    </md-input-container>
+    <br>
+    <md-input-container>
+      <div>
+        <span md-placeholder>Product Name</span>
+        <input type="text" [(ngModel)]="products.name" name="name" mdInput>
+      </div>
+    </md-input-container>
+    <br>
+
+    <md-input-container>
+      <span md-placeholder>Product description</span>
+      <textarea [(ngModel)]="products.description" name="description" mdInput></textarea>
+    </md-input-container>
+    <br>
+
+    <md-input-container>
+      <label md-placeholder>
+      Product Price
+      </label>
+      <input type="text" [(ngModel)]="products.price" name="price" mdInput>
+    </md-input-container>
+    <md-input-container>
+      <label md-placeholder>
+      Qty
+      </label>
+      <input type="text" ([ngModel])="products.qty" name="qty" mdInput>
+    </md-input-container>
+    <br>
+
+    <button type="submit" md-raised-button>Add Product</button>
+
+  </form>
+
+
+</div>
